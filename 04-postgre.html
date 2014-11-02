@@ -4,46 +4,47 @@
 </head>
 <body>
 <pre>
-01a. Create user
+<font color="blue">01a. Create user</font>
 $ sudo -u postgres createuser -s xxx
-01b. Delete user
+<font color="blue">01b. Delete user</font>
 $ sudo -u postgres dropuser xxx
 
-02a. Create database
+<font color="blue">02a. Create database</font>
 $ createdb mystock
-02b. Delete database
+<font color="blue">02b. Delete database</font>
 $ dropbdb mystock
 
-03. Change password
+<font color="blue">03. Change password</font>
 $ psql mystock
 =# ALTER USER xxx WITH PASSWORD 'xxx'
 
-04. list all database
+<font color="blue">04. list all database</font>
 $ psql -l
 
-05a. Create table
+<font color="blue">05a. Create table</font>
 #= CREATE TABLE stock (id smallint, stock_id smallint);
-05b. Add primary key
+<font color="blue">05b. Add primary key</font>
 #= ALTER TABLE stock ADD PRIMARY KEY(id);
-05c. Change table name
+<font color="blue">05c. Change table name</font>
 #= ALTER TABLE stock RENAME TO xxx;
-05d. Add column
+<font color="blue">05d. Add column</font>
 #= ALTER TABLE stock ADD name varchar(10);
-05e. Delete column
+<font color="blue">05e. Delete column</font>
 #= ALTER TABLE stock DROP COLUMN id;
-05f. Add foreign key
+<font color="blue">05f. Add foreign key</font>
 #= ALTER TABLE trade ADD FOREIGN KEY(stock_id) REFERENCES stock(stock_id);
 
-06a. Show table
+<font color="blue">06a. Show table</font>
 #= \d
-06b. show table structure
+<font color="blue">06b. show table structure</font>
 =# \d trade
 
-07. INSERT data
+<font color="blue">07. INSERT data</font>
 #= INSERT INTO stock VALUES (2353, '宏碁');
 
-08. UPDATE data
+<font color="blue">08. UPDATE data</font>
 #= UPDATE trade SET stock_id = 2353 WHERE id = 6;
+
 </pre>
 </body>
 </html>
