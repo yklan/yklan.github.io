@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Jekyll Installtaion"
+categories: jekyll
+---
+@lubuntu-14.04
+
+1. sudo apt-get install ruby1.9.3
+2. sudo gem install bundler
+3. cd to-github-directory
+4. vim Gemfile
+	source 'https://rubygems.org'
+	gem 'github-pages'
+
+5. bundle install    (19:00:13 ~ 19:05:41)
+Fetching gem metadata from https://rubygems.org/.........
+Resolving dependencies...
+Installing RedCloth 4.2.9
+...
+
+6. sudo apt-get install nodejs
+7. bundle exec jekylle serve
+8. http://localhost:4000
+
+ps: copy jekyll default template to github-directory
+a. jekyll new blog
+b. cd blog; mv * github-directory
